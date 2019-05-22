@@ -1,0 +1,34 @@
+{% extends "setup_config_template.html" %}
+{% block content %}
+
+<h1> Setup and Configuration </h1>
+<p>
+ Welcome to our IoT Honeynet Framework. Before you can begin to use this framework, you must
+ first have the following criteria setup in relation to Amazon Web Services (AWS):
+</p>
+<ol>
+ <li>An AWS account setup.</li>
+ <li>An IAM administrator user created.</li>
+ <li>The AWS Command Line Interface setup locally on your host machine with the IAM administrator
+     user credentials (AccessID and AccessKey) and configurations (Region and Output) set.
+ </li>
+</ol>
+<p>
+ With the initial setup and requirements above satisfied, this page will allow you to perform the rest of the necessary
+ configurations required before beginning to use the framework. The following steps should be completed in the order
+ provided.
+</p>
+<ol>
+ <li>Configure a keypair, which is necessary to allow the transfer of files and access to the instances you create with AWS.</li>
+ <li>Create a log group that is used as a destination for the logs collected from your AWS instance which holds your honeypot.</li>
+ <li>Create an IAM policy which is attached to a role that is assumed by an instance and your default VPC. This is used to provide
+     logging permissions which is used to store logs into a log group.
+ </li>
+ <li>Finally, you must create a flow log which is a feature that enables you to capture information about the IP traffic going to and from
+     network interfaces in your Virtual Private Cloud. <strong>N.B.</strong>This step requires that a log group is and an IAM Role with logging
+     permissions is created.
+ </li>
+</ol>
+<p>With all the above steps completed, the IoT Honeynet framework is now ready to use. Enjoy!</p>
+
+ {% endblock %}

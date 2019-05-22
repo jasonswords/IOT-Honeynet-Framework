@@ -1,0 +1,13 @@
+Werkzeug httpd 0.14.1 (Python 3.7.3)
+PostgreSQL DB 9.6.3
+
+
+Splunkd httpd
+SABnzbd newsreader httpd
+Splunkd httpd
+
+
+
+
+MikroTik bandwidth-test server
+PyCharm 2019.1

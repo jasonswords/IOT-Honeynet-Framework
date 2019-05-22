@@ -1,0 +1,35 @@
+{% extends "setup_config_template.html" %}
+{% block content %}
+
+
+ <div class="content-section">
+        <form method="post" action="">
+        {{ form.hidden_tag() }} <!-- adding a crosssite request forgery token -->
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Configuration and Setup</legend> <!-- display the legend specified in the routes.py -->
+
+            <div class="form-group">
+                {{ form.keyName.label(class="form-control-label") }}
+
+                {% if form.keyName.errors %} <!-- if the form had errors then print out this form and its errors -->
+                    {{ form.keyName(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.keyName.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.keyName(class="form-control form-control-lg") }} <!-- if there are no errors then just print out as normal -->
+                {% endif %}
+            </div>
+
+
+
+        </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+
+ {% endblock %}

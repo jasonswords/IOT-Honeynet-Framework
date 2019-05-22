@@ -1,0 +1,63 @@
+{% extends "setup_config_template.html" %}
+{% block content %}
+
+
+ <div class="content-section">
+        <form method="post" action="">
+        {{ form.hidden_tag() }} <!-- adding a crosssite request forgery token -->
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Configuration and Setup</legend> <!-- display the legend specified in the routes.py -->
+
+            <div class="form-group">
+                {{ form.role_name.label(class="form-control-label") }}
+
+                {% if form.role_name.errors %} <!-- if the form had errors then print out this form and its errors -->
+                    {{ form.role_name(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.role_name.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.role_name(class="form-control form-control-lg") }} <!-- if there are no errors then just print out as normal -->
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.policy_name.label(class="form-control-label") }}
+
+                {% if form.policy_name.errors %} <!-- if the form had errors then print out this form and its errors -->
+                    {{ form.policy_name(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.policy_name.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.policy_name(class="form-control form-control-lg") }} <!-- if there are no errors then just print out as normal -->
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.iam_user.label(class="form-control-label") }}
+
+                {% if form.iam_user.errors %} <!-- if the form had errors then print out this form and its errors -->
+                    {{ form.iam_user(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.iam_user.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.iam_user(class="form-control form-control-lg") }} <!-- if there are no errors then just print out as normal -->
+                {% endif %}
+            </div>
+
+        </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+
+ {% endblock %}

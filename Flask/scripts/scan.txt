@@ -1,0 +1,122 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-05-18 22:58 IST
+Note: Host seems down. If it is really up, but blocking our ping probes, Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0012s latency).
+Not shown: 48024 filtered ports, 17498 closed ports
+PORT      STATE SERVICE         VERSION
+5000/tcp  open  http            Werkzeug httpd 0.14.1 (Python 3.7.3)
+5433/tcp  open  postgresql      PostgreSQL DB 9.6.3
+6463/tcp  open  unknown
+6942/tcp  open  unknown
+8000/tcp  open  http            Splunkd httpd
+8065/tcp  open  http            SABnzbd newsreader httpd
+8089/tcp  open  ssl/http        Splunkd httpd
+8191/tcp  open  limnerpressure?
+8999/tcp  open  bctp?
+30666/tcp open  unknown
+45112/tcp open  unknown
+61355/tcp open  bandwidth-test  MikroTik bandwidth-test server
+63342/tcp open  http            PyCharm 2019.1
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port6463-TCP:V=7.70%I=7%D=5/18%Time=5CE08052%P=x86_64-apple-darwin18.0.
+SF:0%r(GetRequest,B6,"HTTP/1\.1\x20401\x20Unauthorized\r\nContent-Length:\
+SF:x2045\r\nContent-Type:\x20application/json\r\nDate:\x20Sat,\x2018\x20Ma
+SF:y\x202019\x2021:59:46\x20GMT\r\nConnection:\x20close\r\n\r\n{\"code\":0
+SF:,\"message\":\"Authorization\x20Required\"}")%r(HTTPOptions,8A,"HTTP/1\
+SF:.1\x20200\x20OK\r\nContent-Length:\x2011\r\nContent-Type:\x20applicatio
+SF:n/json\r\nDate:\x20Sat,\x2018\x20May\x202019\x2021:59:46\x20GMT\r\nConn
+SF:ection:\x20close\r\n\r\n{\"body\":\"\"}")%r(RTSPRequest,1C,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\n\r\n")%r(RPCCheck,1C,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\n\r\n")%r(DNSVersionBindReqTCP,1C,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\n\r\n")%r(DNSStatusRequestTCP,1C,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\n\r\n")%r(Help,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(SSLSessionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n
+SF:")%r(TLSSessionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(K
+SF:erberos,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SMBProgNeg,1
+SF:C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(X11Probe,1C,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\n\r\n")%r(FourOhFourRequest,B6,"HTTP/1\.1\
+SF:x20401\x20Unauthorized\r\nContent-Length:\x2045\r\nContent-Type:\x20app
+SF:lication/json\r\nDate:\x20Sat,\x2018\x20May\x202019\x2021:59:46\x20GMT\
+SF:r\nConnection:\x20close\r\n\r\n{\"code\":0,\"message\":\"Authorization\
+SF:x20Required\"}")%r(LPDString,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n
+SF:\r\n")%r(LDAPSearchReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")
+SF:%r(LDAPBindReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SIPOp
+SF:tions,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LANDesk-RC,1C,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalServer,1C,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(NCP,1C,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\n\r\n")%r(NotesRPC,1C,"HTTP/1\.1\x20400\x20Bad\x20Requ
+SF:est\r\n\r\n")%r(JavaRMI,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n"
+SF:)%r(WMSRequest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(oracl
+SF:e-tns,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port6942-TCP:V=7.70%I=7%D=5/18%Time=5CE0804D%P=x86_64-apple-darwin18.0.
+SF:0%r(NULL,66,"\x001/Users/jason/Library/Preferences/PyCharmEdu2019\.1\0,
+SF:/Users/jason/Library/Caches/PyCharmEdu2019\.1\0\x03---")%r(GenericLines
+SF:,66,"\x001/Users/jason/Library/Preferences/PyCharmEdu2019\.1\0,/Users/j
+SF:ason/Library/Caches/PyCharmEdu2019\.1\0\x03---")%r(GetRequest,66,"\x001
+SF:/Users/jason/Library/Preferences/PyCharmEdu2019\.1\0,/Users/jason/Libra
+SF:ry/Caches/PyCharmEdu2019\.1\0\x03---")%r(HTTPOptions,66,"\x001/Users/ja
+SF:son/Library/Preferences/PyCharmEdu2019\.1\0,/Users/jason/Library/Caches
+SF:/PyCharmEdu2019\.1\0\x03---")%r(RTSPRequest,66,"\x001/Users/jason/Libra
+SF:ry/Preferences/PyCharmEdu2019\.1\0,/Users/jason/Library/Caches/PyCharmE
+SF:du2019\.1\0\x03---")%r(RPCCheck,66,"\x001/Users/jason/Library/Preferenc
+SF:es/PyCharmEdu2019\.1\0,/Users/jason/Library/Caches/PyCharmEdu2019\.1\0\
+SF:x03---")%r(DNSVersionBindReqTCP,66,"\x001/Users/jason/Library/Preferenc
+SF:es/PyCharmEdu2019\.1\0,/Users/jason/Library/Caches/PyCharmEdu2019\.1\0\
+SF:x03---")%r(DNSStatusRequestTCP,66,"\x001/Users/jason/Library/Preference
+SF:s/PyCharmEdu2019\.1\0,/Users/jason/Library/Caches/PyCharmEdu2019\.1\0\x
+SF:03---")%r(Help,66,"\x001/Users/jason/Library/Preferences/PyCharmEdu2019
+SF:\.1\0,/Users/jason/Library/Caches/PyCharmEdu2019\.1\0\x03---")%r(SSLSes
+SF:sionReq,66,"\x001/Users/jason/Library/Preferences/PyCharmEdu2019\.1\0,/
+SF:Users/jason/Library/Caches/PyCharmEdu2019\.1\0\x03---")%r(TLSSessionReq
+SF:,66,"\x001/Users/jason/Library/Preferences/PyCharmEdu2019\.1\0,/Users/j
+SF:ason/Library/Caches/PyCharmEdu2019\.1\0\x03---")%r(Kerberos,66,"\x001/U
+SF:sers/jason/Library/Preferences/PyCharmEdu2019\.1\0,/Users/jason/Library
+SF:/Caches/PyCharmEdu2019\.1\0\x03---");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8191-TCP:V=7.70%I=7%D=5/18%Time=5CE08052%P=x86_64-apple-darwin18.0.
+SF:0%r(GetRequest,A9,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nCo
+SF:ntent-Type:\x20text/plain\r\nContent-Length:\x2085\r\n\r\nIt\x20looks\x
+SF:20like\x20you\x20are\x20trying\x20to\x20access\x20MongoDB\x20over\x20HT
+SF:TP\x20on\x20the\x20native\x20driver\x20port\.\r\n")%r(FourOhFourRequest
+SF:,A9,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nContent-Type:\x2
+SF:0text/plain\r\nContent-Length:\x2085\r\n\r\nIt\x20looks\x20like\x20you\
+SF:x20are\x20trying\x20to\x20access\x20MongoDB\x20over\x20HTTP\x20on\x20th
+SF:e\x20native\x20driver\x20port\.\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8999-TCP:V=7.70%I=7%D=5/18%Time=5CE08086%P=x86_64-apple-darwin18.0.
+SF:0%r(TLSSessionReq,C8,"\)\xefQF\(\x0e\xd2\x93Y\x90\xa4\x12f\x83\xa6\x85\
+SF:xa1&Q\x84\xcc\xb4\xb1\xd9\xa9\xa0\x9e\xfc\xae\x11\xab\xdb5\xb0b\xab\xae
+SF:%\(\xd8u\xcc\xa4{\xf5\"J\xbb\xf0bp\x9fPAT\xf5\x99\xa2\xec\xae\x95\xee\(
+SF:B\xc7F\xb9\xe1\xc9\x13\xa1'\[H\x96\xa0\x8e\?\xb8_\xafXEp>`\xf9\xac\xa3Z
+SF::\xe8\xd3X\x1e\x0c\x99\xa8P\xfdP\x1e\xd2\x88\x93\xc7\(8b\x0c\x7f\xf4\x1
+SF:bN\xd9\^\$\xb8\xd5\xda\xcc\xc4\xf3u\xec\x8c\xd9\xca\x8a\x92\xc0@R\x11\x
+SF:19\x0b\xbeJ\x93\x9b:\x1b\xe0\xe6\x14\xcf@\xf7\xc5~\\\xa8N\x86\x1a\xde%\
+SF:xfdO\xb2\^;\x0c\xa0\xbb\x87\xe2\x1f\xac\xc8\xedx\xb1\xa1\x17\xb6Q\xac\x
+SF:a3\x02\xda\xb1\xe3\|o\xc4\x03\x98\xfa\xe7wy\xe32o\x9aO~x\x89")%r(Kerber
+SF:os,217,"\x04\xe2@\xbdAw\x0b\xfc\xd2{<\xd7\x8bv\xd4W\xb2\x1c\xbb:\(Q\x9e
+SF:\x17\xe6\xa9\xcf>\xb0\xa0\xed\xc7Ga\xc7\xb1-Z\xc6\*'\xe5\x9dE\[\^\x0fnM
+SF:\$\xef\x1f\xe4\x89\xc3\xb6KP\x19\x87\xe8_\xcc\x02XT{{\xe3:\x8b\0g\xb7\x
+SF:cc\^\x99;\xcap\x04\xef\xefyq\x86\xf8\x20\x16\xa3\x80\t\xc1\x02\xfb7\xa0
+SF:i\x89K\xd0\\\x91\x97\x9c7\x96\xfb\xfbTj%S\x04\x87~\xfd\x19\xc6\xd1\xf9\
+SF:"_\x84\xf6\xfa\xd5\xfa\$<q\xe4\xe3\xbe\xfbr\xb6;\x930\xa4\xc0Q\x15Q\x9f
+SF:j\xa8xV,~N\x15\n\xaa\xf0t\x16m\xa0\xe1\x1b\x08\xe8\x03U\xd7\xb11\xaa\x0
+SF:5p/\xc4\xda\^R;\x93\x89\x9c\xde:\xba\xd5\x8bn\xf1\\\xa4\x1b\xaa\xc6x\xc
+SF:b\x86\xcc\x02&wav\x88\xf0\x93\xdb\x85\xe5\x98\x98\xee\x10\x12>\xf8\x01\
+SF:xf3\x8d\xbcb\xdf;\xad\xa9v\xbf\t\x13\xa3\|\xcc2Krt\xae:\xc4\x97\(\xc0\x
+SF:f7\xed\xc1x\x94\xcb\x02\xc3\.\xe9\xd5'\xb2\x91M\xec\x8av\xfb\xfaq\xe1q\
+SF:xf3u\x9f\xf8R\xeb\x87\x0f\xd0\x14\xff\xf7\xa6jj\xa2\x9f;\x96\xb6\xccU\x
+SF:19\xf8\x95\xedVO\x0cZ\x9as\xa8\xacf:\x17\x889X\xe4\x92a\xb3\xa5\xf4\+\x
+SF:fb\x8e\xad\x1a\xd6\xf3y\*\xa7QO\*\xd2\xf6}\xe1#\xfe\x204KV\xb8\x81V\xb4
+SF:\x20P\r\xb8F9\[\x20\x1a\"\xd1\x83\xc8\x12'\x19\xf0ys\xcbf\xf9\x86\x81\x
+SF:ad\xc8O\x12ne\xc0o\x80\xe0\xce\xe4\x90\xbb\x06\x82\xbe\x99z\xa8\xd0\xb4
+SF:s\xb7\xb2\xaa\x12\xf6\xf0\?\xe9EM\x8b\+\xebc\x065\x9e\x90\xb4\xee\x17\x
+SF:c9\xd5\xfbC3j6\x086N\x20\(\0#\xda\x07M\r\xc0\xc3\xd7\x9f\xd6\x855-\(\x9
+SF:5\x12\x07\x02\xd3X\x9c\x9cv\xd6\xd2\xc2\xc0\t\xf7\x04\|\xe9d`i\x16\x82I
+SF:\xf376ppC\x95\xf0p\x86\x02\xc2\xc6\r\xff\x83m\xaa\xca\x98pW7\x05cff\('\
+SF:x1b\xea\x9f\xde2\xc8\xc4\|\xd4\x82\xd3\x94\xe7\xb9\xaf\xce\xe9l\x07iu\x
+SF:bcA14b`\x1e\xc8{g\x106L\xf0\x10\(\x9dPn\xa6\xb7\xf1\x05y\xc4\"\x11\x96"
+SF:);
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 298.90 seconds

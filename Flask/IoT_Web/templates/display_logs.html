@@ -1,0 +1,58 @@
+{% extends "display_logs_template.html" %}
+
+{% block script %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){$("#intid").click(function(){$(".intid").toggle();});});
+$(document).ready(function(){$("#srcip").click(function(){$(".srcip").toggle();});});
+$(document).ready(function(){$("#srcport").click(function(){$(".srcport").toggle();});});
+$(document).ready(function(){$("#dstip").click(function(){$(".dstip").toggle();});});
+$(document).ready(function(){$("#dstport").click(function(){$(".dstport").toggle();});});
+$(document).ready(function(){$("#protocol").click(function(){$(".protocol").toggle();});});
+$(document).ready(function(){$("#action").click(function(){$(".action").toggle();});});
+$(document).ready(function(){$("#logstatus").click(function(){$(".logstatus").toggle();});});
+</script>
+{% endblock %}
+
+{% block content %}
+<table>
+    <tr>
+        <td><button id="intid" class="button">Int ID</button></td>
+        <td><button id="srcip" class="button">Src-ip</button></td>
+        <td><button id="srcport" class="button">Src-port</button></td>
+        <td><button id="dstip" class="button">Dst-IP</button></td>
+        <td><button id="dstport" class="button">Dst-port</button></td>
+        <td><button id="protocol" class="button">Protocol</button></td>
+        <td><button id="action" class="button">Action</button></td>
+        <td><button id="logstatus" class="button">Log-Status</button></td>
+    </tr>
+</table>
+
+<table class="table table-bordered">
+    <tr>
+        <th class="intid">Interface ID</th>
+        <th class="srcip">Source IP</th>
+        <th class="srcport">Source Port</th>
+        <th class="dstip">Destination IP</th>
+        <th class="dstport">Destination Port</th>
+        <th class="protocol">Protocol</th>
+        <th class="action">Action</th>
+        <th class="logstatus">Log Status</th>
+
+    </tr>
+    {% for log in logs %}
+        <tr>
+            <td class="intid">{{ log[2] }}</td>
+            <td class="srcip">{{ log[3] }}</td>
+            <td class="srcport">{{ log[5] }}</td>
+            <td class="dstip">{{ log[4] }}</td>
+            <td class="dstport">{{ log[6] }}</td>
+            <td class="protocol">{{ log[7] }}</td>
+            <td class="action">{{ log[12] }}</td>
+            <td class="logstatus">{{ log[13] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

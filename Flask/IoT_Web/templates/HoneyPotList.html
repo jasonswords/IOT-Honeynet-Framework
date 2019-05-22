@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+
+
+{% for instance in ec2.instances.all()%}
+
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                <h1 class="article-title"> Honey Pot </h1>
+                <p class="article-content"><strong>Amazon Instance ID:</strong>      {{instance.id}}</p>
+                <p class="article-content"><strong>Instance Type:</strong>           {{instance.instance_type}}</p>
+                <p class="article-content"><strong>Public IP:</strong>               {{instance.public_ip_address}}</p>
+                <p class="article-content"><strong>Amazon Machine ID:</strong>       {{instance.image.id}}</p>
+                <p class="article-content"><strong>Current Instance State:</strong>  {{instance.state}}</p>
+                <div class="form-group">
+    <!--                    {{ form.submit1(class="btn btn-outline-info") }}-->
+    <!--                    {{ form.submit2(class="btn btn-outline-info") }}-->
+    <!--                    {{ form.submit3(class="btn btn-outline-info") }}-->
+    <!--                    {{ form.submit4(class="btn btn-outline-info") }}-->
+                </div>
+            </div>
+        </div>
+    </article>
+
+{% endfor %}
+
+
+{% endblock %}
+
