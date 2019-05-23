@@ -17,7 +17,7 @@ protocols="protocols.txt"
 
 #scan ip address using nmap
 #nmap -sV -p- $ip > $path/$dir/$file
-#nmap -sV -T5 -p- $ip > $path/$dir/$file
+nmap -sV -T5 -p- $ip > $path/$dir/$file
 
 # Check it the scan file was created
 if [ -s $path/$dir/$file ]; then
